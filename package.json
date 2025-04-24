@@ -1,0 +1,24 @@
+{
+  "name": "who-is-that-champion-data-api",
+  "version": "1.0.0",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "league-of-legends",
+    "api",
+    "nodejs",
+    "champion-data",
+    "guessing-game",
+    "who-is-that-champion"
+  ],
+  "author": "isaquesv",
+  "license": "ISC",
+  "description": "A Node.js API that provides localized data for the guessing game Who Is That Champion.",
+  "type": "module",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
