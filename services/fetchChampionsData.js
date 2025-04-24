@@ -7,7 +7,7 @@ async function fetchApiJSON(url) {
     return response.json();
 }
 
-async function buildChampionObject(champion, dataDragonApiLatestVersion, locale, kerrdersApiChampionsData) {
+async function buildChampionObject(dataDragonApiBasicChampionData, dataDragonApiLatestVersion, locale, kerrdersApiChampionsData) {
     const championId = dataDragonApiBasicChampionData.id;
     const championName = dataDragonApiBasicChampionData.name;
     const championTitle = dataDragonApiBasicChampionData.title;
@@ -69,8 +69,8 @@ export async function getChampionsDataFromApis(dataDragonApiLatestVersion, local
         const kerrdersApiChampionsData = await fetchApiJSON("https://gist.githubusercontent.com/Kerrders/0067d88dfd982c272e20dcb496f4dbc7/raw/e0d39fec90a590dc934cd6e60a257a079c15473b/champions.json");
 
         const championsData = await Promise.all(
-            Object.values(basicDataDragonApiChampionsData.data).map(champion =>
-                buildChampionObject(champion, dataDragonApiLatestVersion, locale, kerrdersApiChampionsData)
+            Object.values(basicDataDragonApiChampionsData.data).map(dataDragonApiBasicChampionData =>
+                buildChampionObject(dataDragonApiBasicChampionData, dataDragonApiLatestVersion, locale, kerrdersApiChampionsData)
             )
         );
 
