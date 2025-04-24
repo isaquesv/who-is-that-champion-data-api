@@ -1,4 +1,4 @@
-import { getChampionsData } from "../services/champions.js";
+import { getChampionsData } from "../services/fetchChampionsData.js";
 
 export async function getApisData(req, res) {
     const champions_data = await getChampionsData();
