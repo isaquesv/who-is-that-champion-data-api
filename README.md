@@ -89,6 +89,8 @@ Para acessar o deploy desse projeto basta [clicar aqui](https://who-is-that-cham
 https://who-is-that-champion-data-api.vercel.app/api
 ```
 
+E aguardar alguns instantes enquanto o `json` carrega 😉
+
 ---
 
 ## Licença
