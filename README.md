@@ -18,7 +18,7 @@ Retorna um `json` que contém a versão mais recente da API DataDragon e todas a
 | **Campo**               | **Descrição**                                                |
 | ----------------------- | ------------------------------------------------------------ |
 | `"latest_version"`      | Versão mais recente da API Data Dragon.                      |
-| `"pt_br"`, `"en_us"` ou `"es_es"` | O campo contém um array com os dados dos campeões. |
+| `"pt_br"`, `"es_es"` ou `"en_us"` | O campo contém um array com os dados dos campeões. |
 | `"id"`                  | ID do campeão.                                               |
 | `"name"`                | Nome do campeão.                                             |
 | `"title"`               | Título do campeão.                                           |
@@ -63,10 +63,10 @@ Retorna um `json` que contém a versão mais recente da API DataDragon e todas a
     },
     ...
   ],
-  "en_us": [
+  "es_es": [
     ...
   ],
-  "es_es": [
+  "en_us": [
     ...
   ]
 }

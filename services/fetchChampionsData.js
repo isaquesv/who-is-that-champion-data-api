@@ -90,14 +90,14 @@ export async function getChampionsData() {
         }
 
         const pt_br = await getChampionsDataFromApis(latestVersion, "pt_BR");
-        const en_us = await getChampionsDataFromApis(latestVersion, "en_US");
         const es_es = await getChampionsDataFromApis(latestVersion, "es_ES");
+        const en_us = await getChampionsDataFromApis(latestVersion, "en_US");
 
         return {
             latest_version: latestVersion,
             pt_br: pt_br,
-            en_us: en_us,
-            es_es: es_es
+            es_es: es_es,
+            en_us: en_us
         };
     } catch (error) {
         console.error(`Erro ao buscar dados dos campeões: ${error}`);

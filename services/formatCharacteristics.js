@@ -1,5 +1,7 @@
 export function formatRegion(region, locale) {
-    if (region == "unaffiliated") {
+    region = region[0].toUpperCase() + region.slice(1);
+
+    if (region == "Unaffiliated") {
         if (locale == "pt_BR" || locale == "en_US") {
             return "Runeterra";
         } else {
@@ -7,7 +9,33 @@ export function formatRegion(region, locale) {
         }
     }
 
-    return region[0].toUpperCase() + region.slice(1);
+    if (locale == "pt_BR") {
+        if (region == "Mount-targon") {
+            return "Monte Targon";
+        } else if (region == "Void") {
+            return "Vazio";
+        } else if (region == "Bandle-city") {
+            return "Bandópolis";
+        } else if (region == "Shadow-isles") {
+            return "Ilhas das Sombras";
+        } else if (region == "Bilgewater") {
+            return "Águas de Sentina";
+        }
+    } else if (locale == "es_ES") {
+        if (region == "Mount-targon") {
+            return "Monte Targon";
+        } else if (region == "Void") {
+            return "El Vacío";
+        } else if (region == "Bandle-city") {
+            return "Ciudad de Bandle";
+        } else if (region == "Shadow-isles") {
+            return "Islas de la Sombra";
+        } else if (region == "Bilgewater") {
+            return "Aguas Estancadas";
+        }
+    }
+
+    return region;
 }
 
 export function formatRange(range, id, locale) {
