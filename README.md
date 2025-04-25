@@ -1,7 +1,19 @@
 
-# Data API - Quem é esse campeão?
+# Who Is That Champion Data API
 
 Uma API desenvolvida com o objetivo de ser a responsável por otimizar o fluxo de busca, agrupamento e retorno de todo o conteúdo necessário para o funcionamento do jogo de adivinhação *[Who Is That Champion?](https://github.com/isaquesv/who-is-that-champion)*, que desafia os jogadores a adivinhar os campeões do *League of Legends* com base em suas características.
+
+---
+
+## Deploy
+
+Para acessar o deploy desse projeto basta *[clicar aqui](https://who-is-that-champion-data-api.vercel.app/api)* ou acessar a seguinte URL:
+
+```
+https://who-is-that-champion-data-api.vercel.app/api
+```
+
+E aguardar alguns instantes enquanto o `json` carrega 😉
 
 ---
 
@@ -11,14 +23,14 @@ Uma API desenvolvida com o objetivo de ser a responsável por otimizar o fluxo d
 GET /api/
 ```
 
-Retorna um `json` que contém a versão mais recente da API DataDragon e todas as informações (características dos campeões) relevantes e necessárias para o funcionamento do *[Who Is That Champion?](https://github.com/isaquesv/who-is-that-champion)* nos 3 idiomas suportados pelo jogo (**pt_BR**, **en_US** e **es_ES**).
+Retorna um `json` que contém a versão mais recente da API *Data Dragon* e todas as informações relevantes dos campeões, nos três idiomas suportados: `pt-BR`, `en-US` e `es-ES`.
 
 ### Explicação dos campos do JSON:
 
 | **Campo**               | **Descrição**                                                |
 | ----------------------- | ------------------------------------------------------------ |
 | `"latest_version"`      | Versão mais recente da API Data Dragon.                      |
-| `"pt_br"`, `"es_es"` ou `"en_us"` | O campo contém um array com os dados dos campeões. |
+| `"pt_br"`, `"es_es"` ou `"en_us"` | Arrays com os dados dos campeões em cada idioma.   |
 | `"key"`                 | Key (ID) do campeão.                                         |
 | `"name"`                | Nome do campeão.                                             |
 | `"title"`               | Título do campeão.                                           |
@@ -35,7 +47,7 @@ Retorna um `json` que contém a versão mais recente da API DataDragon e todas a
 | `"icon_path"`           | Caminho para o ícone do campeão.                             |
 | `"splash_art_path"`     | Caminho para a imagem de splash art do campeão.              |
 
-## Demonstração `GET /api/`
+## Exemplo de resposta
 
 ```javascript
 {
@@ -55,7 +67,7 @@ Retorna um `json` que contém a versão mais recente da API DataDragon e todas a
       ],
       "range_type": "Corpo-a-Corpo",
       "skins_count": 12,
-      "release_year": "2013",
+      "release_year": 2013,
       "passive_name": "Postura do Arauto da Morte",
       "ultimate_name": "Aniquilador de Mundos",
       "icon_path": "https://ddragon.leagueoflegends.com/cdn/15.8.1/img/champion/Aatrox.png",
@@ -79,41 +91,24 @@ Retorna um `json` que contém a versão mais recente da API DataDragon e todas a
 ### **Back-end:** JavaScript e Node.js
 [![My Skills](https://skillicons.dev/icons?i=js,nodejs)](https://skillicons.dev)
 
-### **APIs:** DataDragon (Riot Games), LoLdleData (Kerrders) e Universe Meeps LoL, para capturar as informações dos campeões.  
+### **APIs:** Data Dragon, LoLdle Data e Universe Meeps LoL  
 <img src="https://img.shields.io/badge/League%20of%20Legends-C28F2C.svg?style=for-the-badge&logo=League-of-Legends&logoColor=white">
-
----
-
-## Deploy
-
-Para acessar o deploy desse projeto basta [clicar aqui](https://who-is-that-champion-data-api.vercel.app/api) ou acessar a seguinte URL:
-
-```
-https://who-is-that-champion-data-api.vercel.app/api
-```
-
-E aguardar alguns instantes enquanto o `json` carrega 😉
-
----
-
-## Licença
-
-[MIT](https://choosealicense.com/licenses/mit/)
 
 ---
 
 ## Autores
 
-- [isaquesv](https://github.com/isaquesv)
+- *[isaquesv](https://github.com/isaquesv)*
 
----
+## Licença
+
+- Este projeto está sob a licença *[MIT](https://choosealicense.com/licenses/mit/)*
+
 
 ## Referência
 
- - [League of Legends](https://www.leagueoflegends.com/)
- - [Who Is That Champion?](https://github.com/isaquesv/who-is-that-champion)
- - [DataDragon API](https://developer.riotgames.com/docs/lol)
- - [Kerrders LoLdle Data](https://github.com/Kerrders/LoLdleData)
- - Universe Meeps LoL
- - [LoLdle](https://loldle.net)
- 
+- *[League of Legends (Riot Games)](https://www.leagueoflegends.com/)*
+- *[Who Is That Champion? (isaquesv)](https://github.com/isaquesv/who-is-that-champion)*
+- *[Data Dragon (Riot Games)](https://developer.riotgames.com/docs/lol)*
+- *[LoLdle Data (Kerrders)](https://github.com/Kerrders/LoLdleData)*
+- *Universe Meeps LoL* 
