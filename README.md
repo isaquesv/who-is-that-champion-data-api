@@ -79,6 +79,9 @@ Retorna um `json` que contém a versão mais recente da API DataDragon e todas a
 ### **Back-end:** JavaScript e Node.js
 [![My Skills](https://skillicons.dev/icons?i=js,nodejs)](https://skillicons.dev)
 
+### **APIs:** DataDragon (Riot Games), LoLdleData (Kerrders) e Universe Meeps LoL, para capturar as informações dos campeões.  
+<img src="https://img.shields.io/badge/League%20of%20Legends-C28F2C.svg?style=for-the-badge&logo=League-of-Legends&logoColor=white">
+
 ---
 
 ## Deploy
