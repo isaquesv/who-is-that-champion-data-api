@@ -111,7 +111,7 @@ E aguardar alguns instantes enquanto o `json` carrega 😉
 ## Referência
 
  - [League of Legends](https://www.leagueoflegends.com/)
- - [WhoIsThatChampion?](https://github.com/isaquesv/who-is-that-champion)
+ - [Who Is That Champion?](https://github.com/isaquesv/who-is-that-champion)
  - [DataDragon API](https://developer.riotgames.com/docs/lol)
  - [Kerrders LoLdle Data](https://github.com/Kerrders/LoLdleData)
  - Universe Meeps LoL
