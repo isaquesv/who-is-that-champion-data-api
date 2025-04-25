@@ -88,17 +88,15 @@ export async function getChampionsData() {
             throw new Error("Versão inválida");
         }
 
-        const [pt_br, en_us, es_es] = await Promise.all([
-            getChampionsDataFromApis(latestVersion, "pt_BR"),
-            getChampionsDataFromApis(latestVersion, "en_US"),
-            getChampionsDataFromApis(latestVersion, "es_ES")
-        ]);
+        const pt_br = await getChampionsDataFromApis(latestVersion, "pt_BR");
+        const en_us = await getChampionsDataFromApis(latestVersion, "en_US");
+        const es_es = await getChampionsDataFromApis(latestVersion, "es_ES");
 
         return {
             latest_version: latestVersion,
-            pt_br,
-            en_us,
-            es_es
+            pt_br: pt_br,
+            en_us: en_us,
+            es_es: es_es
         };
     } catch (error) {
         console.error(`Erro ao buscar dados dos campeões: ${error}`);
