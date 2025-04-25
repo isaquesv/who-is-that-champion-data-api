@@ -19,7 +19,7 @@ Retorna um `json` que contém a versão mais recente da API DataDragon e todas a
 | ----------------------- | ------------------------------------------------------------ |
 | `"latest_version"`      | Versão mais recente da API Data Dragon.                      |
 | `"pt_br"`, `"es_es"` ou `"en_us"` | O campo contém um array com os dados dos campeões. |
-| `"id"`                  | ID do campeão.                                               |
+| `"key"`                 | Key (ID) do campeão.                                         |
 | `"name"`                | Nome do campeão.                                             |
 | `"title"`               | Título do campeão.                                           |
 | `"gender"`              | Gênero do campeão.                                           |
@@ -42,7 +42,7 @@ Retorna um `json` que contém a versão mais recente da API DataDragon e todas a
   "latest_version": "15.8.1",
   "pt_br": [
     {
-      "id": "Aatrox",
+      "key": "Aatrox",
       "name": "Aatrox",
       "title": "a Espada Darkin",
       "gender": "Masculino",

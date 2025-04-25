@@ -46,7 +46,7 @@ async function buildChampionObject(dataDragonApiBasicChampionData, dataDragonApi
     const championFunctions = formatFunctions(universeChamp.role);
 
     return {
-        id: championId,
+        key: championId,
         name: championName,
         title: championTitle,
         gender: formatGender(championGender, championId, locale),
