@@ -1,7 +1,7 @@
 
 # Data API - Quem é esse campeão?
 
-Uma API desenvolvida com o objetivo de ser a responsável por buscar, agrupar e retornar o conteúdo necessário para o funcionamento do jogo de adivinhação *[Quem é esse campeão?](https://github.com/isaquesv/who-is-that-champion)*, que desafia os jogadores a adivinhar os campeões do *League of Legends* com base em suas características.
+Uma API desenvolvida com o objetivo de ser a responsável por otimizar o fluxo de busca, agrupamento e retorno de todo o conteúdo necessário para o funcionamento do jogo de adivinhação *[Quem é esse campeão?](https://github.com/isaquesv/who-is-that-champion)*, que desafia os jogadores a adivinhar os campeões do *League of Legends* com base em suas características.
 
 ---
 
@@ -110,7 +110,10 @@ E aguardar alguns instantes enquanto o `json` carrega 😉
 
 ## Referência
 
- - [Data Dragon API](https://developer.riotgames.com/docs/lol)
+ - [League of Legends](https://www.leagueoflegends.com/)
+ - [WhoIsThatChampion](https://github.com/isaquesv/who-is-that-champion)
+ - [DataDragon API](https://developer.riotgames.com/docs/lol)
  - [Kerrders LoLdle Data](https://github.com/Kerrders/LoLdleData)
  - Universe Meeps LoL
+ - [LoLdle](https://loldle.net)
  
