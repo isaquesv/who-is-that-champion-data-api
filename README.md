@@ -10,7 +10,7 @@ Uma API desenvolvida com o objetivo de ser a responsável por otimizar o fluxo d
 Para acessar o deploy desse projeto basta *[clicar aqui](https://who-is-that-champion-data-api.vercel.app/api)* ou acessar a seguinte URL:
 
 ```
-https://who-is-that-champion-data-api.vercel.app/api
+  https://who-is-that-champion-data-api.vercel.app/api
 ```
 
 E aguardar alguns instantes enquanto o `json` carrega 😉
@@ -20,7 +20,7 @@ E aguardar alguns instantes enquanto o `json` carrega 😉
 ## Documentação da API
 
 ```
-GET /api/
+  GET /api/
 ```
 
 Retorna um `json` que contém a versão mais recente da API *Data Dragon* e todas as informações relevantes dos campeões, nos três idiomas suportados: `pt-BR`, `en-US` e `es-ES`.
@@ -93,6 +93,12 @@ Retorna um `json` que contém a versão mais recente da API *Data Dragon* e toda
 
 ### **APIs:** Data Dragon, LoLdle Data e Universe Meeps LoL  
 <img src="https://img.shields.io/badge/League%20of%20Legends-C28F2C.svg?style=for-the-badge&logo=League-of-Legends&logoColor=white">
+
+---
+
+## Suporte
+
+Para suporte, caso você encontre algum problema, tenha sugestões de melhorias ou algo do tipo, fique à vontade para adicionar uma **issue** [clicando aqui](https://github.com/isaquesv/who-is-that-champion-data-api/issues/new)!
 
 ---
 
