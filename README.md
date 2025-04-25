@@ -98,7 +98,7 @@ Retorna um `json` que contém a versão mais recente da API *Data Dragon* e toda
 
 ## Suporte
 
-Para suporte, caso você encontre algum problema, tenha sugestões de melhorias ou algo do tipo, fique à vontade para adicionar uma **issue** [clicando aqui](https://github.com/isaquesv/who-is-that-champion-data-api/issues/new)!
+Para suporte, caso você encontre algum problema, tenha sugestões de melhorias ou algo do tipo, fique à vontade para adicionar uma **issue** *[clicando aqui](https://github.com/isaquesv/who-is-that-champion-data-api/issues/new)*!
 
 ---
 
