@@ -44,44 +44,53 @@ export function formatRange(range, id, locale) {
 }
 
 export function formatLanes(rawLanes, locale) {
-    let lanes = "";
+    const lanes = [];
 
     for (let i = 0; i < rawLanes.split(",").length; i++) {
         let lane = rawLanes.split(",")[i][0].toUpperCase() + rawLanes.split(",")[i].substring(1);
 
-        if (i > 0) {
-            lanes += " / ";
-        }
         if (locale == "pt_BR") {
             if (lane == "Top") {
-                lanes += "Topo";
+                lanes.push("Topo");
             } else if (lane == "Jungle") {
-                lanes += "Selva";
+                lanes.push("Selva");
             } else if (lane == "Mid") {
-                lanes += "Meio";
+                lanes.push("Meio");
             } else if (lane == "Bottom") {
-                lanes += "Atirador";
+                lanes.push("Atirador");
             } else {
-                lanes += "Suporte";
+                lanes.push("Suporte");
             }
         } else if (locale == "es_ES") {
             if (lane == "Top") {
-                lanes += "Superior";
+                lanes.push("Superior");
             } else if (lane == "Jungle") {
-                lanes += "Jungla";
+                lanes.push("Jungla");
             } else if (lane == "Mid") {
-                lanes += "Central";
+                lanes.push("Central");
             } else if (lane == "Bottom") {
-                lanes += "Inferior";
+                lanes.push("Inferior");
             } else {
-                lanes += "Soporte";
+                lanes.push("Soporte");
             }
         } else {
-            lanes += lane;
+            lanes.push(lane);
         }
     }
 
-    return lanes;
+    return lanes.join(" / ");
+}
+
+export function formatFunctions(rawRoles) {
+    const roles = [];
+
+    for (let i = 0; i < rawRoles.length; i++) {
+        let role = rawRoles[i];
+
+        roles.push(role.name);
+    }
+
+    return roles.join(" / ");
 }
 
 export function formatGender(rawGender, id, locale) {

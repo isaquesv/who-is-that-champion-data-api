@@ -1,6 +1,6 @@
 import fetch from "node-fetch";
 import { fetchDataDragonLatestVersion } from "./fetchDataDragonVersion.js";
-import { formatRegion, formatRange, formatLanes, formatGender } from "./formatCharacteristics.js";
+import { formatRegion, formatRange, formatLanes, formatFunctions, formatGender } from "./formatCharacteristics.js";
 
 async function fetchApiJSON(url) {
     const response = await fetch(url);
@@ -42,7 +42,8 @@ async function buildChampionObject(dataDragonApiBasicChampionData, dataDragonApi
 
     const universeChamp = universeMeepsApiChampionData.champion;
     const championRegion = universeChamp["associated-faction-slug"];
-    const championReleaseYear = universeChamp["release-date"].slice(0, 4);
+    const championReleaseYear = parseInt(universeChamp["release-date"].slice(0, 4));
+    const championFunctions = formatFunctions(universeChamp.role);
 
     return {
         id: championId,
@@ -52,7 +53,7 @@ async function buildChampionObject(dataDragonApiBasicChampionData, dataDragonApi
         lane: formatLanes(championLanes, locale),
         region: formatRegion(championRegion, locale),
         resource: championPartype,
-        functions: universeChamp.role.map(role => role.name),
+        functions: championFunctions,
         range_type: formatRange(championRange, championId, locale),
         skins_count: championSkinsCount,
         release_year: championReleaseYear,
